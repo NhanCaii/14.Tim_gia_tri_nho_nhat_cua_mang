@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function minArray(arr) {
+        let min = arr[0];
+
+        for(let i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    let arr1 = [3,-1];
+    if(arr1.length == 0){
+        alert("Không có số nhỏ nhất, mảng rỗng")
+    }else{
+        var min = minArray(arr1);
+        alert("Số nhỏ nhất: " + min);
+    }
+
+    console.log(min);
+    
+
+</script>
+</body>
+</html>
